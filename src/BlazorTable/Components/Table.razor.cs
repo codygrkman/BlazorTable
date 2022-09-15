@@ -497,6 +497,28 @@ namespace BlazorTable
         }
 
         /// <summary>
+        /// Action performed when the row is clicked.
+        /// </summary>
+        [Parameter]
+        public Action<TableItem> DoubleRowClickAction { get; set; }
+
+        /// <summary>
+        /// Handles the onclick action for table rows.
+        /// This allows the RowClickAction to be optional.
+        /// </summary>
+        private void OnDoubleRowClickHandler(TableItem tableItem)
+        {
+            try
+            {
+                DoubleRowClickAction?.Invoke(tableItem);
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError(ex, "DoubleRowClickAction threw an exception: {0}", ex);
+            }
+        }
+
+        /// <summary>
         /// Add custom row to current table
         /// </summary>
         /// <param name="customRow">custom row to add</param>
