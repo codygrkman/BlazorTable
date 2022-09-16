@@ -1,16 +1,17 @@
 # BlazorTable
 [![Demo](https://img.shields.io/badge/Live-Demo-Blue?style=flat-square)](https://BlazorTable.netlify.com/)
-[![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/BlazorTable.svg?style=flat-square)](https://www.nuget.org/packages/BlazorTable)
-[![Nuget (with prereleases)](https://img.shields.io/nuget/dt/BlazorTable.svg?style=flat-square)](https://www.nuget.org/packages/BlazorTable)
+[![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/BlazorTable.svg?style=flat-square)](https://www.nuget.org/packages/BlazorTableExtended)
+[![Nuget (with prereleases)](https://img.shields.io/nuget/dt/BlazorTable.svg?style=flat-square)](https://www.nuget.org/packages/BlazorTableExtended)
 ![](https://github.com/IvanJosipovic/BlazorTable/workflows/CI/CD/badge.svg)
 
-Blazor Table Component with Sorting, Paging and Filtering
+Blazor Table Component with Sorting, Paging and Filtering.
+- This is a fork of Ivan Josipovic's [BlazorTable](https://github.com/IvanJosipovic/BlazorTable) with the addition of native Blazor `@ondblclick` support.
 
 [![Sample Gif](https://raw.githubusercontent.com/IvanJosipovic/BlazorTable/master/BlazorTable.gif)](/BlazorTable.gif)
 
 ## Install
 
-- Add [BlazorTable Nuget](https://www.nuget.org/packages/BlazorTable)
+- Add [BlazorTable Nuget](https://www.nuget.org/packages/BlazorTableExtended)
   - dotnet add package BlazorTable
 - Add to the index.html or _Hosts.cshtml
   - `<script src="_content/BlazorTable/BlazorTable.min.js"></script>`
