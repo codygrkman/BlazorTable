@@ -1,8 +1,7 @@
 # BlazorTable
-[![Demo](https://img.shields.io/badge/Live-Demo-Blue?style=flat-square)](https://BlazorTable.netlify.com/)
-[![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/BlazorTable.svg?style=flat-square)](https://www.nuget.org/packages/BlazorTableExtended)
-[![Nuget (with prereleases)](https://img.shields.io/nuget/dt/BlazorTable.svg?style=flat-square)](https://www.nuget.org/packages/BlazorTableExtended)
-![](https://github.com/IvanJosipovic/BlazorTable/workflows/CI/CD/badge.svg)
+[![Demo (from original BlazorTable)](https://img.shields.io/badge/Live-Demo-Blue?style=flat-square)](https://BlazorTable.netlify.com/)
+[![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/BlazorTableExtended.svg?style=flat-square)](https://www.nuget.org/packages/BlazorTableExtended)
+[![Nuget (with prereleases)](https://img.shields.io/nuget/dt/BlazorTableExtended.svg?style=flat-square)](https://www.nuget.org/packages/BlazorTableExtended)
 
 Blazor Table Component with Sorting, Paging and Filtering.
 - This is a fork of Ivan Josipovic's [BlazorTable](https://github.com/IvanJosipovic/BlazorTable) with the addition of native Blazor `@ondblclick` support.
