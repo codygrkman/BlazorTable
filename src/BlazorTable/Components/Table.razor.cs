@@ -50,11 +50,38 @@ namespace BlazorTable
         [Parameter]
         public Func<TableItem, string> TableRowClass { get; set; }
 
+        private int _defaultPageSize = DEFAULT_PAGE_SIZE;
         /// <summary>
-        /// Page Size, defaults to 15
+        /// Set default Page Size; use constant when not set.
         /// </summary>
         [Parameter]
-        public int PageSize { get; set; } = DEFAULT_PAGE_SIZE;
+        public int DefaultPageSize
+        {
+            get => _defaultPageSize;
+            set
+            {
+                _defaultPageSize = value;
+                if (!_pageSizeChanged)
+                    // Use field directly to avoid setting _pageSizeChanged via property
+                    _pageSize = _defaultPageSize;
+
+            }
+        }
+        private int _pageSize = DEFAULT_PAGE_SIZE;
+        private bool _pageSizeChanged;
+        /// <summary>
+        /// Sets Page Size for Table that defaults to 10 if the DefaultPageSize parameter is not used.
+        /// </summary>
+        [Parameter]
+        public int PageSize
+        {
+            get => _pageSize;
+            set
+            {
+                _pageSize = value;
+                _pageSizeChanged = true;
+            }
+        }
 
         /// <summary>
         /// Allow Columns to be reordered
