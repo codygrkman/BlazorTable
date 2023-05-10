@@ -7,7 +7,7 @@
     <Title>BlazorTableExtended</Title>
     <PackageId>BlazorTableExtended</PackageId>
     <Description>Blazor Table Component with Sorting, Paging and Filtering</Description>
-    <Authors>Ivan Josipovic, Cody Grkman</Authors>
+    <Authors>Ivan Josipovic, Cody Grkman, Nicholas Huff</Authors>
     <PackageProjectUrl>https://BlazorTable.netlify.app</PackageProjectUrl>
     <PackageTags>Blazor;Table;Component;Grid;DataTable;Data;Sort;Filter;AspNetCore;AspNet</PackageTags>
     <PackageIcon>icon.png</PackageIcon>
@@ -16,7 +16,7 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>1.0.1</Version>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
